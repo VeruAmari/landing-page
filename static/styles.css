@@ -10,6 +10,28 @@ body,
     flex-direction: column;
     align-items: stretch; /* stretch is actually the default value*/
 }
+.doubles.image {
+    max-width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 300px;
+    background-color: #789;
+}
+.doubles.text {
+    height: 150px;
+    max-width: 300px;
+}
+p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.first.container{
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
 
 .all-containers {
     flex-grow: 1;
@@ -69,7 +91,7 @@ a {
 .header,
 .footer,
 .first {
-    color: #fee;
+    color: aliceblue;
     background: #234;
 }
 
@@ -84,17 +106,20 @@ a {
     background-color: #58f;
     border-radius: 5px;
     min-width: 75px;
-    min-height: 20px;
+    min-height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #58f solid;
+    border: none;
+    color: aliceblue;
 }
 
 .fourth .button {
-    border: #fee;
+    border: solid aliceblue;
 }
-
+.doubles .button {
+    align-self: flex-start;
+}
 .doubles.text {
     flex-direction: column;
 }
