@@ -1,5 +1,6 @@
 body {
     min-height: 100vh;
+    justify-content: space-between;
 }
 body,
 .all-containers {
@@ -8,7 +9,17 @@ body,
     display: flex;
     flex-direction: column;
     align-items: stretch; /* stretch is actually the default value*/
-    justify-content: space-between;
+}
+
+.all-containers {
+    flex-grow: 1;
+}
+.container-for-square-containers {
+    display: flex;
+}
+.square.container,
+.second.container {
+    flex-direction:column;
 }
 
 a {
@@ -16,14 +27,19 @@ a {
     color: #aaa;
 }
 
-.all-containers,
+.second,
+.third,
+.fourth {
+    justify-content: center;
+}
+
+.doubles,
 .container,
 .header,
 .footer {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    flex-basis: auto;
 }
 
 .header {
@@ -33,8 +49,17 @@ a {
 .header-logo {
     font-size: 25px;
 }
+.header-links {
+    display: flex;
+    gap: 30px;
+}
 .footer {
     justify-content: center;
+}
+
+.header,
+.footer {
+    max-height: 50px;
 }
 
 .header,
@@ -42,9 +67,15 @@ a {
 .first {
     color: #fee;
     background: #234;
-    max-height: 50px;
 }
 
-.first.container {
+.square .square {
+    min-width: 100px;
+    min-height: 100px;
+    border: #77f solid;
+    border-radius: 15px;
+}
 
+.doubles.text {
+    flex-direction: column;
 }
