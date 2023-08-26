@@ -1,11 +1,14 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; /* This is actually the default value*/
-    justify-content: space-between;
     min-height: 100vh;
+}
+body,
+.all-containers {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* stretch is actually the default value*/
+    justify-content: space-between;
 }
 
 a {
@@ -13,6 +16,7 @@ a {
     color: #aaa;
 }
 
+.all-containers,
 .container,
 .header,
 .footer {
@@ -42,5 +46,5 @@ a {
 }
 
 .first.container {
-    
+
 }
