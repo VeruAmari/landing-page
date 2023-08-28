@@ -161,13 +161,25 @@ a {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-
+.fourth.container .sub-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    color: #f9faf8;
+    border-radius: 7px;
+    padding: 30px 80px;
+    font-size: 15px;
+}
+.fourth.container .sub-container .text-container .title {
+    font-size: 20px;
+}
 .fourth.container .sub-container,
 .button {
     background-color: #3882f6;
 }
 .fourth .button {
-    border: solid aliceblue;
+    border: solid 2px #f9faf8;
+    height: 20px;
 }
 .doubles .button {
     align-self: flex-start;
