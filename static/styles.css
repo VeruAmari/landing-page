@@ -17,24 +17,36 @@ body,
 }
 .doubles.image {
     max-width: 300px;
-    height: 150px;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     flex-basis: 300px;
     background-color: #789;
 }
 .doubles.text {
-    height: 150px;
-    max-width: 300px;
+    max-width: 350px;
 }
 p,
 h1 {
     margin: 0;
     padding: 0;
 }
+
+.doubles.text .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+.doubles.text p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
 .first.container{
     justify-content: center;
     gap: 30px;
+}
+.first.container .doubles.text .button {
+    margin-top: 10px;
 }
 
 .all-containers {
@@ -77,9 +89,12 @@ a {
     align-items: center;
 }
 .header-logo {
-    font-size: 25px;
+    font-size: 24px;
+    color: #f9faf8;
 }
 .header-links {
+    font-size: 18px;
+    color: #e5e7eb;
     display: flex;
     gap: 30px;
 }
@@ -96,14 +111,14 @@ a {
 .header,
 .footer,
 .first {
-    color: aliceblue;
-    background: rgb(31, 37, 54);
+    color: #f9faf8;
+    background: #1f2937;
 }
 
 .square .square {
     min-width: 120px;
     min-height: 120px;
-    border: #58f solid;
+    border: #3882f6 solid;
     border-radius: 10px;
 }
 
@@ -111,25 +126,27 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #e4e7ee;
+    background-color: #e5e7eb;
 }
 .third.container .sub-container {
     display: flex;
     flex-direction: column;
     max-width: 650px;
     align-items: flex-end;
+    gap: 7px;
 }
 .third.container .sub-container .content {
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: light;
     font-style: italic;
+    color: #1f2937;
 }
 .third.container .sub-container .signature {
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
 }
 
 .button {
-    background-color: #58f;
     border-radius: 5px;
     min-width: 75px;
     min-height: 25px;
@@ -145,6 +162,10 @@ a {
     padding-bottom: 80px;
 }
 
+.fourth.container .sub-container,
+.button {
+    background-color: #3882f6;
+}
 .fourth .button {
     border: solid aliceblue;
 }
