@@ -37,7 +37,7 @@ h1 {
     flex-grow: 1;
 }
 .container-for-square-containers {
-    gap: 25px;
+    gap: 55px;
     display: flex;
 }
 .square.container,
@@ -45,7 +45,7 @@ h1 {
     flex-direction:column;
 }
 .square.container {
-    max-width: 110px;
+    max-width: 125px;
     text-align: center;
 }
 a {
@@ -85,21 +85,40 @@ a {
 
 .header,
 .footer {
-    max-height: 50px;
+    max-height: 72px;
+    min-height: 72px;
 }
 
 .header,
 .footer,
 .first {
     color: aliceblue;
-    background: #234;
+    background: rgb(31, 37, 54);
 }
 
 .square .square {
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 120px;
+    min-height: 120px;
     border: #58f solid;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+
+.third.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4e7ee;
+}
+.third.container .sub-container .content {
+    max-width: 750px;
+    flex-basis: 300px;
+    font-size: 35px;
+    font-style: italic;
+}
+.third.container .signature {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 25px;
 }
 
 .button {
@@ -112,6 +131,11 @@ a {
     align-items: center;
     border: none;
     color: aliceblue;
+}
+
+.container{
+    padding-top: 37px;
+    padding-bottom: 37px;
 }
 
 .fourth .button {
